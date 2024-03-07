@@ -34,6 +34,10 @@ class Movie
         $this->genre = $_genre;
     }
 
+    public static function greet(){
+        return "Ciao! Benvenuto nel fantastico mondo del cinema!";
+    }
+
     // utilizzo del metodo Set
     public function setMovie($nomeTitle, $nomeDirector, $annoReleaseYear, $genereGenre)
     {
@@ -65,7 +69,8 @@ var_dump($avatarDue, $laLeggendaDiAnng);
 </head>
 
 <body>
-    <div class="container mt-5 ">
+    <div class="container mt-5 text-center ">
+        <h1><?php echo Movie::greet() ?></h1>
         <div class="d-flex justify-content-center flex-column align-items-center  ">
 
             <h2>Dettagli del film: Avatar</h2>
